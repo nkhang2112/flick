@@ -12,9 +12,13 @@
 		CB77F657218922110096B3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB77F655218922110096B3BB /* Main.storyboard */; };
 		CB77F659218922150096B3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB77F658218922150096B3BB /* Assets.xcassets */; };
 		CB77F65C218922150096B3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB77F65A218922150096B3BB /* LaunchScreen.storyboard */; };
+		FAE35CA32A0CDCA85E38A7F9 /* Pods_Flick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flick/Pods-Flick.debug.xcconfig"; sourceTree = "<group>"; };
+		484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flick/Pods-Flick.release.xcconfig"; sourceTree = "<group>"; };
 		CB77F64E218922110096B3BB /* Flick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB77F651218922110096B3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB77F653218922110096B3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE35CA32A0CDCA85E38A7F9 /* Pods_Flick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D7008C8BFE4F7617F15700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21218B4FFD823047AB8BDCB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */,
+				484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB77F645218922110096B3BB = {
 			isa = PBXGroup;
 			children = (
 				CB77F650218922110096B3BB /* Flick */,
 				CB77F64F218922110096B3BB /* Products */,
+				21218B4FFD823047AB8BDCB6 /* Pods */,
+				07D7008C8BFE4F7617F15700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB77F660218922150096B3BB /* Build configuration list for PBXNativeTarget "Flick" */;
 			buildPhases = (
+				8A749ECFA9B8A20809A85B43 /* [CP] Check Pods Manifest.lock */,
 				CB77F64A218922110096B3BB /* Sources */,
 				CB77F64B218922110096B3BB /* Frameworks */,
 				CB77F64C218922110096B3BB /* Resources */,
+				79E6B1482B2AA09B48145F42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79E6B1482B2AA09B48145F42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A749ECFA9B8A20809A85B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB77F64A218922110096B3BB /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		CB77F661218922150096B3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +375,7 @@
 		};
 		CB77F662218922150096B3BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
