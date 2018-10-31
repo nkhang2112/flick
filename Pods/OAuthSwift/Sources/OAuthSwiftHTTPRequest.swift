@@ -116,7 +116,7 @@ open class OAuthSwiftHTTPRequest: NSObject, OAuthSwiftRequestHandle {
                     if let response = resp as? HTTPURLResponse {
                         userInfo["Response-Headers"] = response.allHeaderFields
                     }
-                    let error = NSError(domain: OAuthSwiftError.Domain, code: badRequestCode, userInfo: userInfo)
+                    let error = NSError(domain: OAuthSwiftError.Domain, code: badRequestCode, userInfo: userInfo as! [String : Any])
                     failureHandler?(.requestError(error:error, request: usedRequest))
                     return
                 }
@@ -154,7 +154,7 @@ open class OAuthSwiftHTTPRequest: NSObject, OAuthSwiftRequestHandle {
                         userInfo[NSURLErrorFailingURLErrorKey] = urlString
                     }
 
-                    let error = NSError(domain: NSURLErrorDomain, code: response.statusCode, userInfo: userInfo)
+                    let error = NSError(domain: NSURLErrorDomain, code: response.statusCode, userInfo: userInfo as! [String : Any])
                     if error.isExpiredToken {
                         failureHandler?(.tokenExpired(error: error))
                     } else {
