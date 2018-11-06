@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521E994F7F105BCED1D71D1F /* Pods_Flick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B8CA8F98698D75D56E538 /* Pods_Flick.framework */; };
+		CB0F3F9C21898BFF0094FCAF /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3F9B21898BFF0094FCAF /* NowPlayingViewController.swift */; };
+		CB0F3FA02189A3740094FCAF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3F9F2189A3740094FCAF /* MovieCell.swift */; };
 		CB77F652218922110096B3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77F651218922110096B3BB /* AppDelegate.swift */; };
-		CB77F654218922110096B3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77F653218922110096B3BB /* ViewController.swift */; };
 		CB77F657218922110096B3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB77F655218922110096B3BB /* Main.storyboard */; };
 		CB77F659218922150096B3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB77F658218922150096B3BB /* Assets.xcassets */; };
 		CB77F65C218922150096B3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB77F65A218922150096B3BB /* LaunchScreen.storyboard */; };
-		FAE35CA32A0CDCA85E38A7F9 /* Pods_Flick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flick/Pods-Flick.debug.xcconfig"; sourceTree = "<group>"; };
-		484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flick/Pods-Flick.release.xcconfig"; sourceTree = "<group>"; };
+		0086BB9B3768F589E6492920 /* Pods-Flick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.debug.xcconfig"; path = "Target Support Files/Pods-Flick/Pods-Flick.debug.xcconfig"; sourceTree = "<group>"; };
+		095098EDE88CC2055267A151 /* Pods-Flick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flick.release.xcconfig"; path = "Target Support Files/Pods-Flick/Pods-Flick.release.xcconfig"; sourceTree = "<group>"; };
+		225B8CA8F98698D75D56E538 /* Pods_Flick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0F3F9B21898BFF0094FCAF /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		CB0F3F9F2189A3740094FCAF /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		CB77F64E218922110096B3BB /* Flick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB77F651218922110096B3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB77F653218922110096B3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB77F656218922110096B3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB77F658218922150096B3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB77F65B218922150096B3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,28 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE35CA32A0CDCA85E38A7F9 /* Pods_Flick.framework in Frameworks */,
+				521E994F7F105BCED1D71D1F /* Pods_Flick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D7008C8BFE4F7617F15700 /* Frameworks */ = {
+		2D34003EF5AAA4E127B55420 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0832BB59CA07AC7DD2A2E475 /* Pods_Flick.framework */,
+				225B8CA8F98698D75D56E538 /* Pods_Flick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		21218B4FFD823047AB8BDCB6 /* Pods */ = {
+		419D24310E55B48D308EB576 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */,
-				484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */,
+				0086BB9B3768F589E6492920 /* Pods-Flick.debug.xcconfig */,
+				095098EDE88CC2055267A151 /* Pods-Flick.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CB77F645218922110096B3BB = {
@@ -62,8 +64,8 @@
 			children = (
 				CB77F650218922110096B3BB /* Flick */,
 				CB77F64F218922110096B3BB /* Products */,
-				21218B4FFD823047AB8BDCB6 /* Pods */,
-				07D7008C8BFE4F7617F15700 /* Frameworks */,
+				419D24310E55B48D308EB576 /* Pods */,
+				2D34003EF5AAA4E127B55420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +80,12 @@
 		CB77F650218922110096B3BB /* Flick */ = {
 			isa = PBXGroup;
 			children = (
+				CB0F3F9B21898BFF0094FCAF /* NowPlayingViewController.swift */,
+				CB0F3F9F2189A3740094FCAF /* MovieCell.swift */,
 				CB77F651218922110096B3BB /* AppDelegate.swift */,
-				CB77F653218922110096B3BB /* ViewController.swift */,
 				CB77F655218922110096B3BB /* Main.storyboard */,
-				CB77F658218922150096B3BB /* Assets.xcassets */,
 				CB77F65A218922150096B3BB /* LaunchScreen.storyboard */,
+				CB77F658218922150096B3BB /* Assets.xcassets */,
 				CB77F65D218922150096B3BB /* Info.plist */,
 			);
 			path = Flick;
@@ -95,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB77F660218922150096B3BB /* Build configuration list for PBXNativeTarget "Flick" */;
 			buildPhases = (
-				8A749ECFA9B8A20809A85B43 /* [CP] Check Pods Manifest.lock */,
+				B6F762F9300F56739C938EBD /* [CP] Check Pods Manifest.lock */,
 				CB77F64A218922110096B3BB /* Sources */,
 				CB77F64B218922110096B3BB /* Frameworks */,
 				CB77F64C218922110096B3BB /* Resources */,
-				79E6B1482B2AA09B48145F42 /* [CP] Embed Pods Frameworks */,
+				A9E9129D51F14985C04DD850 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +160,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		79E6B1482B2AA09B48145F42 /* [CP] Embed Pods Frameworks */ = {
+		A9E9129D51F14985C04DD850 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,25 +168,23 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flick/Pods-Flick-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8A749ECFA9B8A20809A85B43 /* [CP] Check Pods Manifest.lock */ = {
+		B6F762F9300F56739C938EBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,8 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB77F654218922110096B3BB /* ViewController.swift in Sources */,
+				CB0F3F9C21898BFF0094FCAF /* NowPlayingViewController.swift in Sources */,
 				CB77F652218922110096B3BB /* AppDelegate.swift in Sources */,
+				CB0F3FA02189A3740094FCAF /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +359,7 @@
 		};
 		CB77F661218922150096B3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39B8161258D2D64141E6606D /* Pods-Flick.debug.xcconfig */;
+			baseConfigurationReference = 0086BB9B3768F589E6492920 /* Pods-Flick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,7 +377,7 @@
 		};
 		CB77F662218922150096B3BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 484796C8BB6588829C9A41E1 /* Pods-Flick.release.xcconfig */;
+			baseConfigurationReference = 095098EDE88CC2055267A151 /* Pods-Flick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
